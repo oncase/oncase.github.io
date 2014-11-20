@@ -100,10 +100,17 @@ p.intro-text{
 
 @media screen and (max-device-width: 1024px) {
     .site-container{
-        width:600px;
+        width:100%;
     }
     .box{
-        height:150px;
+        height:250px;
+        width:90%;
+        margin:10px 5%;
+    }
+    
+    .project-title{
+        font-size:18px;
+        font-weight:500;
     }
 }
 
