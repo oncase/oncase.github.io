@@ -1,0 +1,97 @@
+body{
+    background-color:#232326;
+    background-image:url(../images/sandbox_watermark.png);
+    background-size:800px 819px;
+    background-position:-40% center;
+    background-attachment: fixed;
+    
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    
+    color:#d2d2d2;
+}
+
+.site-container{
+    width:960px;
+    margin:0px auto;
+    clear:both
+}
+
+.sandboxIcon{
+    background-image:url(../images/sandbox_icon.png);
+    height:220px;
+    margin-top:34px;
+}
+
+.oncaseSandbox{
+    background-image:url(../images/oncase-sandbox.png);
+    height:60px;
+}
+
+.bg-no-repeat{
+    background-repeat:no-repeat;
+}
+
+.bg-center{
+    background-position:center center;
+}
+
+.bg-contain{
+    background-size:contain;
+}
+
+.hairline{
+    border:none;
+    height:1px;
+    background-color:#444446;
+}
+
+.text-center{
+    text-align: center;
+}
+
+h2{
+    margin-top:0px;
+    color:#b1de62;
+    font-size:24px;
+    font-weight: 100;
+}
+
+p.intro-text{
+    font-size:20px;
+}
+
+.boxes-container{
+    margin-top:50px;
+    margin-bottom:120px;
+}
+
+.box{
+    width:31%;
+    height:265px;
+    border:solid 1px #343437;
+    float:left;
+    background-color:#27272a;
+    margin:1%;
+    position:relative;
+    cursor:pointer;
+}
+
+.project-title{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    padding:10px;
+    font-size:22px;
+    line-height:28px;
+    text-align:center;
+}
+
+.bg-purple{background-color:#7761a7;}
+.bg-orange{background-color:#ea6153;}
+.bg-cyan{background-color:#19b698 ;}
+.clear-both{clear:both;}
+.footer{
+    margin-bottom:120px;
+}
