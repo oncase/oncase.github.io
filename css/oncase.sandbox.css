@@ -98,9 +98,12 @@ p.intro-text{
 
 
 
-@media screen and (max-device-width: 640px;) {
+@media screen and (max-device-width: 1024px) {
     .site-container{
         width:600px;
+    }
+    .box{
+        height:150px;
     }
 }
 
