@@ -95,3 +95,12 @@ p.intro-text{
 .footer{
     margin-bottom:120px;
 }
+
+
+
+@media screen and (max-device-width: 640px;) {
+    .site-container{
+        width:600px;
+    }
+}
+
