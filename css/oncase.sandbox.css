@@ -1,3 +1,4 @@
+
 body{
     background-color:#232326;
     background-image:url(../images/sandbox_watermark.png);
@@ -7,6 +8,7 @@ body{
     
     font-family: 'Lato', sans-serif;
     font-weight: 100;
+    
     
     color:#d2d2d2;
 }
@@ -75,17 +77,51 @@ p.intro-text{
     margin:1%;
     position:relative;
     cursor:pointer;
+    overflow:hidden;
+}
+
+
+.icon-twitter{
+    background-image:url(https://g.twimg.com/Twitter_logo_white.png);
+    
+}
+
+.icon-twitter path{
+    fill:#ff6600;
+}
+
+.project-icon{
+    height:217px;
+    background-size: auto 40%;
+    background-position: center center;
+    background-repeat:no-repeat;
+}
+
+.content-wrapper{
+    -webkit-transition: top ease-out 200ms; /* For Safari 3.1 to 6.0 */
+    transition: top ease-out 200ms;
+    top: 0px;
+    clear:both;
+    position:absolute;
+    left:0px;
+    right:0px;
+}
+.box:hover .content-wrapper{
+    top: -217px;
 }
 
 .project-title{
-    position:absolute;
-    bottom:0px;
-    left:0px;
-    right:0px;
     padding:10px;
     font-size:22px;
     line-height:28px;
     text-align:center;
+
+}
+
+.project-description{
+    margin:20px;
+    margin-top:18px;
+    font-size:20px;
 }
 
 .bg-purple{background-color:#7761a7;}
@@ -95,6 +131,8 @@ p.intro-text{
 .footer{
     margin-bottom:120px;
 }
+
+
 
 
 
@@ -111,6 +149,25 @@ p.intro-text{
     .project-title{
         font-size:18px;
         font-weight:500;
+    }
+    
+    .content-wrapper{
+        top: 0px;
+    }
+    
+    .box:hover .content-wrapper{
+        top: -202px;
+    }
+    
+    .project-icon{
+        height:202px;
+    }
+    
+    .project-description{
+        margin:20px;
+        margin-top:58px;
+        font-size:20px;
+        font-size:18px;
     }
 }
 
@@ -133,4 +190,5 @@ p.intro-text{
         width:1300px;
     }
 }
+
 
