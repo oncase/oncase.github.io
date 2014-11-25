@@ -106,7 +106,8 @@ p.intro-text{
     left:0px;
     right:0px;
 }
-.box:hover .content-wrapper{
+
+.content-wrapper-hover{
     top: -217px;
 }
 

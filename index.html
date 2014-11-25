@@ -56,6 +56,15 @@
                 e.preventDefault();
                 $(this).toggleClass('hover_effect');
             });
-        });    
+        });
+
+    
+        $(".box").on('mouseenter touchstart',function(){
+            $(this).find(".content-wrapper").addClass("content-wrapper-hover");
+        }).mouseleave(function(){
+            $(this).find(".content-wrapper").removeClass("content-wrapper-hover");
+        });
+
+        
     </script>
 </html>
