@@ -60,8 +60,16 @@
 
     
         $(".box").on('mouseenter touchstart',function(e){
-            $(this).find(".content-wrapper").addClass("content-wrapper-hover");
-        }).on('mouseleave touchend',function(e){
+            var wrapper = $(this).find(".content-wrapper");
+            if(e.type==="touchstart"){
+                if(wrapper.hasClass("content-wrapper-hover")){
+                    wrapper.removeClass("content-wrapper-hover"));
+                    return;
+                }
+            }
+            wrapper.addClass("content-wrapper-hover");
+                
+        }).on('mouseleave',function(e){
             $(this).find(".content-wrapper").removeClass("content-wrapper-hover");
         });
 
