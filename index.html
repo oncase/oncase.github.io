@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <head>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,100italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/oncase.sandbox.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
 </head>
 
 <html>
@@ -20,7 +20,10 @@
                 <div class="box">
                     <div class="content-wrapper">
                         <div class="project-icon icon-twitter"></div>
-                        <div class="bg-orange project-title">Cubeguard</div>
+                        <div class="bg-orange project-title">
+                            Cubeguard
+                            <div class="touch-more"></div>
+                        </div>
                         <div class="project-description">
                             This project is awesome. With Twitter sentiment you are able to plug your twitter account into BA Server and get started with a lot of analysis.
                         </div>
@@ -29,7 +32,10 @@
                 <div class="box">
                     <div class="content-wrapper">
                         <div class="project-icon icon-twitter"></div>
-                        <div class="bg-cyan project-title">viz.graph</div>
+                        <div class="bg-cyan project-title">
+                            viz.graph
+                            <div class="touch-more"></div>
+                        </div>
                         <div class="project-description">
                             This project is awesome. With Twitter sentiment you are able to plug your twitter account into BA Server and get started with a lot of analysis.
                         </div>
@@ -38,7 +44,10 @@
                 <div class="box">
                     <div class="content-wrapper">
                         <div class="project-icon icon-twitter"></div>
-                        <div class="bg-purple project-title">Twitter.sentiment</div>
+                        <div class="bg-purple project-title">
+                            Twitter.sentiment
+                            <div class="touch-more"></div>
+                        </div>
                         <div class="project-description">
                             This project is awesome. With Twitter sentiment you are able to plug your twitter account into BA Server and get started with a lot of analysis.
                         </div>
@@ -51,25 +60,27 @@
         </div>
     </body>
     <script language="javascript">
-        $(document).ready(function() {
-            $('.hover').bind('touchstart touchend', function(e) {
-                e.preventDefault();
-                $(this).toggleClass('hover_effect');
-            });
-        });
+
 
     
-        $(".box").on('mouseenter touchstart',function(e){
-            
-            var wrapper = $(this).find(".content-wrapper");
-            if(e.type==="touchstart" && wrapper.hasClass("content-wrapper-hover")){
-                wrapper.removeClass("content-wrapper-hover");
-                return ;
-            }
-            wrapper.addClass("content-wrapper-hover");
+        $(".box").on('mouseenter',function(e){
+            e.preventDefault();
+            $(this).find(".content-wrapper").addClass("content-wrapper-hover");
                 
         }).on('mouseleave',function(e){
+            e.preventDefault();
             $(this).find(".content-wrapper").removeClass("content-wrapper-hover");
+        });
+        
+        $(".touch-more").on("touchstart",function(e){
+            e.preventDefault();
+            var wrapper = $(this).parent().parent();
+           
+            if(wrapper.hasClass("content-wrapper-hover")){
+                wrapper.removeClass("content-wrapper-hover");
+            }else{
+                wrapper.addClass("content-wrapper-hover");
+            }
         });
 
         

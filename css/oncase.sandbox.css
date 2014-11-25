@@ -4,11 +4,8 @@ body{
     background-size:800px 819px;
     background-position:-40% center;
     background-attachment: fixed;
-    
-    font-family: 'Lato', sans-serif;
-    font-weight: 100;
-    
-    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     color:#d2d2d2;
 }
 
@@ -77,9 +74,6 @@ p.intro-text{
     position:relative;
     cursor:pointer;
     overflow:hidden;
-    
-
-    
 }
 
 
@@ -121,6 +115,23 @@ p.intro-text{
 
 }
 
+.touch-more{
+    font-size:32px;
+    width: 30px;
+    height: 38px;
+    float: right;
+    display: none;
+    top: 0px;
+}
+.touch-more:after{
+    content:'+';
+    color:#fff;
+}
+
+.content-wrapper-hover div.touch-more:after{
+    content:'-';
+}
+
 .project-description{
     margin:20px;
     margin-top:18px;
@@ -140,32 +151,37 @@ p.intro-text{
 
 
 @media screen and (max-width: 1023px) {
-    *{
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-    }
+
     .site-container{
         width:100%;
+        -webkit-perspective: 1000;
+        -webkit-backface-visibility: hidden;
     }
     .box{
         height:250px;
         width:90%;
         margin:10px 5%;
         -webkit-perspective: 1000;
--webkit-backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
     }
     
     .project-title{
         font-size:18px;
         font-weight:500;
+        -webkit-perspective: 1000;
+        -webkit-backface-visibility: hidden;
+    }
+    
+    .touch-more{
+        display:block;
+        -webkit-perspective: 1000;
+        -webkit-backface-visibility: hidden;
     }
     
     .content-wrapper{
         top: 0px;
+        -webkit-perspective: 1000;
+        -webkit-backface-visibility: hidden;
     }
     
     .content-wrapper-hover{
@@ -174,11 +190,11 @@ p.intro-text{
     
     .project-icon{
         height:202px;
+        -webkit-perspective: 1000;
+        -webkit-backface-visibility: hidden;
     }
     
     .project-description{
-        margin:20px;
-        margin-top:58px;
         font-size:20px;
         font-size:18px;
     }
