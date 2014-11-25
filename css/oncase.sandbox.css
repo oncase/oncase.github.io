@@ -78,8 +78,7 @@ p.intro-text{
     cursor:pointer;
     overflow:hidden;
     
--webkit-perspective: 1000;
--webkit-backface-visibility: hidden;
+
     
 }
 
@@ -156,6 +155,8 @@ p.intro-text{
         height:250px;
         width:90%;
         margin:10px 5%;
+        -webkit-perspective: 1000;
+-webkit-backface-visibility: hidden;
     }
     
     .project-title{

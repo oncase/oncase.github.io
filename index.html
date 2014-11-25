@@ -60,11 +60,11 @@
 
     
         $(".box").on('mouseenter touchstart',function(e){
+            
             var wrapper = $(this).find(".content-wrapper");
             if(e.type==="touchstart" && wrapper.hasClass("content-wrapper-hover")){
-                    wrapper.removeClass("content-wrapper-hover");
-                    return;
-                }
+                wrapper.removeClass("content-wrapper-hover");
+                return ;
             }
             wrapper.addClass("content-wrapper-hover");
                 
