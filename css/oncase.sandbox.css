@@ -76,11 +76,10 @@ p.intro-text{
     overflow:hidden;
 }
 
+.icon-cubeguard{background-image:url(../images/cubeguard.png);}
+.icon-graph{background-image:url(../images/graph-icon.png);}
+.icon-twitter{background-image:url(https://g.twimg.com/Twitter_logo_white.png);}
 
-.icon-twitter{
-    background-image:url(https://g.twimg.com/Twitter_logo_white.png);
-    
-}
 
 .icon-twitter path{
     fill:#ff6600;
