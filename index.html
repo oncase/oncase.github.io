@@ -59,9 +59,11 @@
         });
 
     
-        $(".box").on('mouseenter touchstart',function(){
+        $(".box").on('mouseenter touchstart',function(e){
+            e.preventDefault();
             $(this).find(".content-wrapper").addClass("content-wrapper-hover");
-        }).on('mouseleave touchend',function(){
+        }).on('mouseleave touchend',function(e){
+            e.preventDefault();
             $(this).find(".content-wrapper").removeClass("content-wrapper-hover");
         });
 
