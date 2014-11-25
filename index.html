@@ -60,7 +60,9 @@
 
     
         $(".box").on('mouseenter touchstart',function(e){
-            e.preventDefault();
+            if(e.target.localName != 'select'){
+                e.preventDefault(); 
+            }
             $(this).find(".content-wrapper").addClass("content-wrapper-hover");
         }).on('mouseleave touchend',function(e){
             e.preventDefault();
