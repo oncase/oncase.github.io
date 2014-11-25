@@ -61,7 +61,7 @@
     
         $(".box").on('mouseenter touchstart',function(){
             $(this).find(".content-wrapper").addClass("content-wrapper-hover");
-        }).mouseleave(function(){
+        }).on('mouseleave touchend',function(){
             $(this).find(".content-wrapper").removeClass("content-wrapper-hover");
         });
 

@@ -1,4 +1,6 @@
+*{
 
+}
 body{
     background-color:#232326;
     background-image:url(../images/sandbox_watermark.png);
@@ -78,6 +80,10 @@ p.intro-text{
     position:relative;
     cursor:pointer;
     overflow:hidden;
+    
+-webkit-perspective: 1000;
+-webkit-backface-visibility: hidden;
+    
 }
 
 
@@ -156,7 +162,7 @@ p.intro-text{
         top: 0px;
     }
     
-    .box:hover .content-wrapper{
+    .content-wrapper-hover{
         top: -202px;
     }
     
