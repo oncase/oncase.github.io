@@ -25,7 +25,7 @@
                             <div class="touch-more"></div>
                         </div>
                         <div class="project-description">
-                            This project is awesome. With Twitter sentiment you are able to plug your twitter account into BA Server and get started with a lot of analysis.
+                            This project is awesome. With Twitter sentiment you are able to plug your twitter account into BA Server and get started with a lot of analysis.<div class="gimmemore"></div>
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                             <div class="touch-more"></div>
                         </div>
                         <div class="project-description">
-                            This project is awesome. With Twitter sentiment you are able to plug your twitter account into BA Server and get started with a lot of analysis.
+                            This project is awesome. With Twitter sentiment you are able to plug your twitter account into BA Server and get started with a lot of analysis.<div class="gimmemore"></div>
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                             <div class="touch-more"></div>
                         </div>
                         <div class="project-description">
-                            This project is awesome. With Twitter sentiment you are able to plug your twitter account into BA Server and get started with a lot of analysis.
+                            This project is awesome. With Twitter sentiment you are able to plug your twitter account into BA Server and get started with a lot of analysis.<div class="gimmemore"></div>
                         </div>
                     </div>
                 </div>
@@ -59,30 +59,8 @@
            
         </div>
     </body>
-    <script language="javascript">
-
-
-    
-        $(".box").on('mouseenter',function(e){
-            e.preventDefault();
-            $(this).find(".content-wrapper").addClass("content-wrapper-hover");
-                
-        }).on('mouseleave',function(e){
-            e.preventDefault();
-            $(this).find(".content-wrapper").removeClass("content-wrapper-hover");
-        });
-        
-        $(".touch-more").on("touchstart",function(e){
-            e.preventDefault();
-            var wrapper = $(this).parent().parent();
-           
-            if(wrapper.hasClass("content-wrapper-hover")){
-                wrapper.removeClass("content-wrapper-hover");
-            }else{
-                wrapper.addClass("content-wrapper-hover");
-            }
-        });
-
-        
-    </script>
+    <script src="js/BoxesView.js"></script>
+    <script src="js/PageView.js"></script>
+    <script src="js/PageController.js"></script>
+    <script src="js/main.js"></script>
 </html>
