@@ -38,7 +38,9 @@ function BoxesView(){
         $(_boxTitleSel).click(function(e){
             var title = $(this);
             if(event.target === this){
-                if(title.parent().hasClass(_boxHoverClass))
+                
+                if(title.parent().css("top") === "-217px" ||
+                   title.parent().css("top") === "-202px")
                     _callDetails(title);
             }
             else{
