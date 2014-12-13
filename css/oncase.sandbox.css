@@ -282,7 +282,7 @@ div.footer{
     height:400px;
     margin:0 auto;
     background-position:center bottom;
-    background-size:contain;
+    
     background-color: #111111;
     background-repeat: no-repeat;
     background-image:url(../images/boxes.png);
