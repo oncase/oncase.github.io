@@ -10,7 +10,7 @@ function PageController(){
         var overlay = '';
         
         $.ajax({
-            url:"/box/"+boxId,
+            url:"box/"+boxId,
             type:'GET',
             dataType : 'html'
         }).done(function(res){
