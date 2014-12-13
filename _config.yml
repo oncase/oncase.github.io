@@ -1,0 +1,4 @@
+collections:
+  boxes:
+    output: true
+    permalink: /box/:path/
