@@ -272,7 +272,13 @@ p.intro-text{
     max-width:80% !important;
 }
 
+div.footer p{
+    margin-top:100px;
+    text-align: center;
+}
+
 div.footer{
+    text-align: center;
     height:400px;
     margin:0 auto;
     background-position:center bottom;
@@ -283,9 +289,17 @@ div.footer{
     
     margin-top:420px;
     border-top:solid 1px #444;
+   
+}
 
-    
-    
+.oncase-logo-footer{
+    background-image: url(../images/oncase-branco.png);
+    background-position:center center;
+    background-size:contain;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    height:60px;
+    margin:0px auto;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {

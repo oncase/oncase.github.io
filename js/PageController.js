@@ -4,6 +4,13 @@ function PageController(){
     
     function _init(){
         pv.init();
+        _bindOncaseSite();
+    }
+    
+    function _bindOncaseSite(){
+        $(".oncase-logo-footer").click(function(){
+            window.open("http://onca.se");
+        });
     }
     
     function _createOverlay(boxId){
