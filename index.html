@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+{% for box in site.boxes %}
+                <div class="box">
+                    <div class="content-wrapper">
+                        <div class="project-icon {{ box.iconClass }}"></div>
+                        <div class="bg-{{ box.color }} project-title" box-id="{{ box.path }}">
+                            {{ box.title }}
+                            <div class="touch-more"></div>
+                        </div>
+                        <div class="project-description">
+                            {{ box.description }}
+                            <div class="gimmemore"></div>
+                        </div>
+                    </div>
+                </div>
+{% endfor %}
