@@ -8,18 +8,20 @@ function PageController(){
     
     function _createOverlay(boxId){
         var overlay = '';
-        
+        var burl = "/box/"+boxId;
+        console.log(burl);
         $.ajax({
-            url:"box/"+boxId,
+            url:burl,
             type:'GET',
             dataType : 'html'
         }).done(function(res){
             overlay = res;
+            _body.append(overlay);
+            $(".pg-overlay-close").unbind()
+            .click(_enableMainPage);
         });
         
-        _body.append(overlay);
-        $(".pg-overlay-close").unbind()
-        .click(_enableMainPage);
+        
     }
     
     function _removeOverlay(){

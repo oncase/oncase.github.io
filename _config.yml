@@ -2,3 +2,8 @@ collections:
   boxes:
     output: true
     permalink: /box/:path/
+markdown: redcarpet
+redcarpet:
+  extensions: ["strikethrough","tables"]
+kramdown:
+  input: GFM

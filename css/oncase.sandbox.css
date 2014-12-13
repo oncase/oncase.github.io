@@ -7,6 +7,8 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color:#d2d2d2;
+    margin:0;
+    
 }
 
 a, a:visited, a:active, a:hover{
@@ -37,6 +39,11 @@ body.disabled{
     margin: 0;
     background-color:rgba(35,35,38,.98);
     overflow: auto;
+    
+}
+
+.pg-overlay .site-container{
+    padding-top:80px;
 }
 
 .pg-overlay-title{
@@ -47,6 +54,8 @@ body.disabled{
     line-height: 70px;
     text-align: center;
     font-size: 40px;
+    position:fixed;
+    z-index:99999999;
 }
 
 .pg-overlay-close{
@@ -200,9 +209,6 @@ p.intro-text{
 
 
 .clear-both{clear:both;}
-.footer{
-    margin-bottom:120px;
-}
 
 
 
@@ -262,6 +268,25 @@ p.intro-text{
     }
 }
 
+.pg-overlay .site-container img{
+    max-width:80% !important;
+}
+
+div.footer{
+    height:400px;
+    margin:0 auto;
+    background-position:center bottom;
+    background-size:contain;
+    background-color: #111111;
+    background-repeat: no-repeat;
+    background-image:url(../images/boxes.png);
+    
+    margin-top:420px;
+    border-top:solid 1px #444;
+
+    
+    
+}
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
     .site-container{

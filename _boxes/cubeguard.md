@@ -5,10 +5,10 @@ iconClass: icon-cubeguard
 description: Cubeguard is a Pentaho plugin that intends to deliver some simplicity on implementing mondrian security.
 color: orange
 path: cubeguard
+id: cubeguard
+boxUrl: "http://github.com/marpontes/cubeguard"
+author: "@marpontes"
 ---
-
-Cubeguard
-===
 
 Cubeguard is a Sparkl Plugin for Pentaho BA Platform that intends to deliver a dynamic layer of security for Mondrian - olap engine.
 
