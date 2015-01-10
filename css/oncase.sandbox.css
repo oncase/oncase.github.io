@@ -217,9 +217,10 @@ p.intro-text{
 @media screen and (max-width: 1023px) {
 
     .site-container{
-        width:100%;
+        width:90%;
         -webkit-perspective: 1000;
         -webkit-backface-visibility: hidden;
+        margin:5%;
     }
     .box{
         height:250px;
