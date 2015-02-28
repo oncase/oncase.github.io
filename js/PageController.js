@@ -5,6 +5,30 @@ function PageController(){
     function _init(){
         pv.init();
         _bindOncaseSite();
+        _triggerPermaLink();
+    }
+
+    function _triggerPermaLink(){
+        var hash = window.location.hash;
+
+        if(hash === null)
+            return;
+
+        hash = hash.substring(1);
+
+        var indexHash = $(".boxes-container").children().map(
+            function(){
+                        return $(this)
+                            .find(".project-title")
+                            .attr("box-id");
+                    }
+        ).splice(0).indexOf(hash);
+
+        if (indexHash<0)
+            return;
+
+        _disableMainPage(hash);
+
     }
     
     function _bindOncaseSite(){
@@ -40,9 +64,11 @@ function PageController(){
     
     function _disableMainPage(title){
         _body.addClass("disabled");
+        window.location.hash=title;
         _createOverlay(title);
     }
     function _enableMainPage(){
+        window.location.hash="";
         _removeOverlay();
         _body.removeClass("disabled");
     }
