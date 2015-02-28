@@ -51,8 +51,17 @@ function PageController(){
             _body.append(overlay);
             $(".pg-overlay-close").unbind()
             .click(_enableMainPage);
+
+            if ($("#main_content").find("img").length > 0) {
+                    $("#main_content img").on('load', function() {
+                        NProgress.done();
+                    });
+            }else{
+                NProgress.done();
+            }
+
         }).always(function(){
-            NProgress.done();
+            
         });
         
         
