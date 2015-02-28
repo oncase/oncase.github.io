@@ -55,6 +55,7 @@ body.disabled{
     text-align: center;
     font-size: 40px;
     position:fixed;
+    z-index: 101;
 }
 
 .pg-overlay-close{
