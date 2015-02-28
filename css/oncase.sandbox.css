@@ -34,7 +34,7 @@ body.disabled{
     left: 0;
     right:0;
     bottom:0;
-    z-index: 99999999999;
+    z-index: 100;
     display: block;
     margin: 0;
     background-color:rgba(35,35,38,.98);
@@ -55,7 +55,6 @@ body.disabled{
     text-align: center;
     font-size: 40px;
     position:fixed;
-    z-index:99999999;
 }
 
 .pg-overlay-close{
@@ -319,5 +318,6 @@ div.footer{
 @media screen and (min-width: 1440px) {
     .site-container{
         width:1300px;
+        margin:0 auto;
     }
 }

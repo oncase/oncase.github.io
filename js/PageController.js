@@ -17,6 +17,7 @@ function PageController(){
         var overlay = '';
         var burl = "/box/"+boxId;
         console.log(burl);
+        NProgress.start();
         $.ajax({
             url:burl,
             type:'GET',
@@ -26,6 +27,8 @@ function PageController(){
             _body.append(overlay);
             $(".pg-overlay-close").unbind()
             .click(_enableMainPage);
+        }).always(function(){
+            NProgress.done();
         });
         
         
