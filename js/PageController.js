@@ -51,6 +51,13 @@ function PageController(){
             _body.append(overlay);
             $(".pg-overlay-close").unbind()
             .click(_enableMainPage);
+            _body.keyup(
+                    function(event) {
+                            if (event.keyCode == 27) {
+                                    page.enableMainPage();
+                            }
+                    }
+            );
 
             if ($("#main_content").find("img").length > 0) {
                     $("#main_content img").on('load', function() {
