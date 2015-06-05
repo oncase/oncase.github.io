@@ -8,6 +8,8 @@ path: viz_graph
 id: viz_graph
 boxUrl: "http://github.com/marpontes/viz_graph"
 author: "@marpontes"
+boxType: "git"
+lastUpdate: "2014-11-06T10:37:49Z"
 ---
 
 Viz.graph is a Pentaho platform plugin that allows you to deploy a Graph visualization to your Pentaho Analyzer.
