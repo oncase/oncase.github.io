@@ -9,6 +9,7 @@ layout: default
 {% for box in site.boxes %}
     <script>
         var box = {
+            "id" : "{{ box.id }}",
             "title" : "{{ box.title }}",
             "repo" : "{{ box.boxUrl }}",
             "type" : "{{ box.boxType }}",
