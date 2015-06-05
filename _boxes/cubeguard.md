@@ -8,6 +8,8 @@ path: cubeguard
 id: cubeguard
 boxUrl: "http://github.com/marpontes/cubeguard"
 author: "@marpontes"
+boxType: "git"
+lastUpdate: "2014-11-06T10:37:49Z"
 ---
 
 Cubeguard is a Sparkl Plugin for Pentaho BA Platform that intends to deliver a dynamic layer of security for Mondrian - olap engine.

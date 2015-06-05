@@ -6,6 +6,7 @@ function PageController(){
         pv.init();
         _bindOncaseSite();
         _triggerPermaLink();
+	_calculateLastUpdated();
     }
 
     function _triggerPermaLink(){
@@ -67,11 +68,40 @@ function PageController(){
                 NProgress.done();
             }
 
+            //Include last updated:
+            var _writeStandardDate = function(box) {
+                console.log(box);
+                console.log(box.lastUpdate);
+                var date = new Date(box.lastUpdate);
+                document.getElementsByClassName("lastUpdatedOverlay").item(0).textContent = 
+                    "Last update on " + date.toLocaleString().split(" ").join(" at ");
+            }
+        
+            var box = $.grep(boxes, function(box) {return box.id == boxId})[0];
+            if (box.type == "git") {
+                var params = box.repo.split("//")[1].split("/");
+                var owner = params[1];
+                var repo = params[2];
+                $.ajax({
+                    url: "https://api.github.com/repos/" + owner + "/" + repo + "/commits",
+                    cache: false,
+                    success: function(html){
+                        var date = new Date(html[0]['commit']['committer']['date']);
+                        document.getElementsByClassName("lastUpdatedOverlay").item(0).textContent = 
+                            "Last update on " + date.toLocaleString().split(" ").join(" at ");
+                    },
+                    error: function() {
+                        _writeStandardDate(box);
+                    }
+                });
+            } else {
+                _writeStandardDate(box);
+            }
+            //Finished code for including last udated
+
         }).always(function(){
             
         });
-        
-        
     }
     
     function _removeOverlay(){
@@ -91,6 +121,31 @@ function PageController(){
     
     function _openBoxDetail(){
         
+    }
+
+    function _calculateLastUpdated() {
+        var i;
+        for (i = 0; i < boxes.length; i++) {
+            if (boxes[i].type != "git") {
+                continue;
+            }
+            var params = boxes[i].repo.split("//")[1].split("/");
+            var owner = params[1];
+            var repo = params[2];
+            $.ajax({
+                url: "https://api.github.com/repos/" + owner + "/" + repo + "/commits",
+                cache: false,
+                index: i,
+                success: function(html){
+                    var date = new Date(html[0]['commit']['committer']['date']);
+                    document.getElementsByClassName("lastUpdated").item(this.index).firstChild.textContent = 
+                        "Last update on " + date.toLocaleString().split(" ").join(" at ");
+                },
+                error: function() {
+                    console.log(this.index);
+                }
+            });
+        }
     }
     
     return {
