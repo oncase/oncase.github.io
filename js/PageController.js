@@ -106,7 +106,7 @@ function PageController(){
                 index: i,
                 success: function(html){
                     var date = new Date(html[0]['commit']['committer']['date']);
-                    document.getElementsByClassName("lastUpdated").item(this.index).textContent = 
+                    document.getElementsByClassName("lastUpdated").item(this.index).firstChild.textContent = 
                         "Last update on " + date.toLocaleString().split(" ").join(" at ");
                 },
                 error: function() {
