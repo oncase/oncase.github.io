@@ -1,11 +1,63 @@
 [
   {
+    "titulo": "Azure Cosmos DB export",
+    "resumo": "Exporter of Azure Cosmos Db data through CLI.",
+    "ano": 2012,
+    "repositorio":"https://github.com/oncase/cosmosdb-export",
+    "site":"https://onca.se/",
+    "tags": ["Productivity"] 
+  },
+
+  {
+    "titulo": "Cubeguard",
+    "resumo": "Cubeguard is a Pentaho plugin that intends to deliver some simplicity on implementing mondrian security.",
+    "ano": 2012,
+    "repositorio":"https://github.com/oncase/cubeguard",
+    "site":"https://onca.se/",
+    "tags": ["pentaho","security"] 
+  }
+  ,
+  {
     "titulo": "Oktopus Pentaho",
     "resumo": "Oktopus is a way to keep track of links (dashboards, reports, content) and delegate access by Roles.",
-    "ano": 2012,
-    "repositorio":"www.oktopusapp.com",
+    "ano": 2018,
+    "repositorio":"https://github.com/oncase/oktopus-pentaho",
     "site":"https://oktopusapp.com/",
     "tags": ["pentaho", "data governance","Premium"] 
+  } ,
+  {
+    "titulo": "Oncase connections-deploy",
+    "resumo": "To deploy connections on PDI and pentaho-server per environment.",
+    "ano": 2012,
+    "repositorio":"https://www.npmjs.com/package/pentaho-connections-deploy",
+    "site":"https://onca.se/",
+    "tags": ["pentaho"]
+  }  ,
+  {
+    "titulo": "Mondrian - Virtual Cube",
+    "resumo": "A simple VirtualCube for Mondrian v3 - Some people are frequently asking around how to use Virtual Cubes, so I've setup this simple example to demonstrate a working prototype.",
+    "ano": 2012,
+    "repositorio":"https://github.com/oncase/mondrian-virtualcube-example",
+    "site":"https://onca.se/",
+    "tags": ["pentaho","security"] 
+  }
+  ,
+  {
+    "titulo": "Pentaho Drilldown - Table Component",
+    "resumo": "A sample way to imlpement drill down on a TableComponent.",
+    "ano": 2012,
+    "repositorio":"https://github.com/oncase/drillsample",
+    "site":"https://onca.se/",
+    "tags": ["pentaho","Productivity"]
+  }
+  ,
+  {
+    "titulo": "Pentaho Authentication Filter",
+    "resumo": "This bundle helps implement authentication filtering in Pentaho by being chained into the Spring Security Filter Chain.",
+    "ano": 2012,
+    "repositorio":"https://github.com/oncase/pentaho-authentication-filter",
+    "site":"https://onca.se/",
+    "tags": ["pentaho","security"] 
   },
   {
     "titulo": "Parlezy",
@@ -17,30 +69,50 @@
   }
   ,
   {
-    "titulo": "Cubeguard",
-    "resumo": "Cubeguard is a Pentaho plugin that intends to deliver some simplicity on implementing mondrian security.",
+    "titulo": "Sample LDAP",
+    "resumo": "Docker Compose that spins up an OpenLDAP server with sample data.",
     "ano": 2012,
-    "repositorio":"http://github.com/marpontes/cubeguard",
-    "site":"onca.se",
-    "tags": ["pentaho"] 
+    "repositorio":" https://github.com/oncase/sample-ldap ",
+    "site":"https://onca.se",
+    "tags": ["pentaho","Productivity" ] 
   }
   ,
   {
     "titulo": "Tapa",
     "resumo": "With tapa you can easily customize your Pentaho Login page.",
     "ano": 2012,
-    "repositorio":"http://github.com/marpontes/tapa",
-    "site":"onca.se",
-    "tags": ["pentaho"] 
+    "repositorio":"https://github.com/oncase/tapa",
+    "site":"https://onca.se/",
+    "tags": ["pentaho","Productivity"] 
+  }
+  ,
+  {
+    "titulo": "Tarantulla Alert",
+    "resumo": "Monitors subset of data and submits to intelligent algorithms for selection of special cases.",
+    "ano": 2019,
+    "repositorio":"soon",
+    "site":"https://tarantulla.io/",
+    "tags": ["Machine learning","crawler","Premium"]
   }
   ,
   {
     "titulo": "Tarantulla suite",
     "resumo": "To extract and collect data from social network. A smart crawler & scraping enabled with Pentaho integration.",
-    "ano": 2012,
-    "repositorio":"http://github.com/oncase/tarantula",
-    "site":"https://tarantulla.io/",
+    "ano": 2018,
+    "repositorio":"http://github.com/oncase/tarantulla",
+    "site":"http://wilson.oncase.com.br/",
     "tags": ["pentaho","crawler","scraping","Premium"]
   }
+  ,
+  {
+    "titulo": "Wilson",
+    "resumo":   "Connected to a data set with Pentaho technologies delivering information that you need on your social networks such as Telegram.",
+    "ano": 2018,
+    "repositorio":"soon",
+    "site":"http://wilson.oncase.com.br/",
+    "tags": ["pentaho","Machine learning","Premium", "Productivity"]
+  }
+ 
+
   
 ]

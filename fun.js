@@ -93,10 +93,15 @@ function setTools(obj) {
         resumo.innerHTML = obj[x].resumo;
 
         //repo
-        repo.href = obj[x].repositorio;
-        repo.target='_blank';
+        if(obj[x].repositorio != 'soon'){
+            repo.href = obj[x].repositorio;
+            repo.target='_blank';
+            repo.setAttribute('data-try', obj[x].titulo.split(' ')[0]);
+        }else{
+            repo.setAttribute('data-try', 'soon');
+        }
+    
         repo.classList.add('repo');
-        repo.setAttribute('data-try', obj[x].titulo.split(' ')[0]);
         boxLinks.appendChild(repo)
 
         //site
@@ -107,7 +112,7 @@ function setTools(obj) {
         boxLinks.appendChild(wedo);
 
         // enviar interesse
-        wedo.innerHTML=' 🖐 We it do for your';
+        wedo.innerHTML='🖐 We do it for you';
         wedo.classList.add('link');
         wedo.setAttribute('data-toolName',obj[x].titulo);
         wedo.onclick = function () {

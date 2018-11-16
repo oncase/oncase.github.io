@@ -32,6 +32,7 @@ a.smal {font-size: .7rem;color: #4c5775;text-decoration: underline;cursor: point
 .repo{display: flex; justify-content: space-between; border-radius: 19px;    width: fit-content;padding: .5rem;  align-items: center;  }
 .repo::before{content:''; display: block; width: 22px; height: 22px; background: url(img/github-logo.png) center center no-repeat; background-size: contain; }
 .repo:after{content: 'Try it yourself'; display: block;  margin-left: .5rem; font-size: .9rem;}
+.repo[data-try="soon"]:after{content: 'Coming soon'; display: block;  margin-left: .5rem; font-size: .9rem;}
 .boxLinks {
     width: 100%;
     padding: 1rem 0;
