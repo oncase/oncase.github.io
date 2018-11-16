@@ -1,0 +1,46 @@
+[
+  {
+    "titulo": "Oktopus Pentaho",
+    "resumo": "Oktopus is a way to keep track of links (dashboards, reports, content) and delegate access by Roles.",
+    "ano": 2012,
+    "repositorio":"www.oktopusapp.com",
+    "site":"https://oktopusapp.com/",
+    "tags": ["pentaho", "data governance","Premium"] 
+  },
+  {
+    "titulo": "Parlezy",
+    "resumo": "So here's a tool that should enable you to just drop video/audio files from conversations and get useful information about it",
+    "ano": 2012,
+    "repositorio":"https://github.com/oncase/parlezy",
+    "site":"https://medium.com/oncase/analisando-tempo-de-falas-em-sabatinas-de-candidatos-3fe7d5fc3e57",
+    "tags": ["pentaho"] 
+  }
+  ,
+  {
+    "titulo": "Cubeguard",
+    "resumo": "Cubeguard is a Pentaho plugin that intends to deliver some simplicity on implementing mondrian security.",
+    "ano": 2012,
+    "repositorio":"http://github.com/marpontes/cubeguard",
+    "site":"onca.se",
+    "tags": ["pentaho"] 
+  }
+  ,
+  {
+    "titulo": "Tapa",
+    "resumo": "With tapa you can easily customize your Pentaho Login page.",
+    "ano": 2012,
+    "repositorio":"http://github.com/marpontes/tapa",
+    "site":"onca.se",
+    "tags": ["pentaho"] 
+  }
+  ,
+  {
+    "titulo": "Tarantulla suite",
+    "resumo": "To extract and collect data from social network. A smart crawler & scraping enabled with Pentaho integration.",
+    "ano": 2012,
+    "repositorio":"http://github.com/oncase/tarantula",
+    "site":"https://tarantulla.io/",
+    "tags": ["pentaho","crawler","scraping","Premium"]
+  }
+  
+]

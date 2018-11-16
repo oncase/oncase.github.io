@@ -1,0 +1,28 @@
+[
+    {
+        "filter":"All",
+        "color":"#000"
+    },
+    {
+        "filter":"Pentaho",
+        "color":"#071EAF"
+    },
+    {
+        "filter":"Crawler",
+        "color":"#FF2222"
+    },
+    {
+        "filter":"Data extraction",
+        "color":"#36FF4B"
+    },
+    {
+        "filter":"Data governance",
+        "color":"#ffd710"
+    }
+    ,
+    {
+        "filter":"Premium",
+        "color":"#0798AF"
+    }
+
+]

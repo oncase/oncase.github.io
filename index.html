@@ -1,39 +1,113 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<script>
-    var boxes = [];
-</script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-{% for box in site.boxes %}
-    <script>
-        var box = {
-            "id" : "{{ box.id }}",
-            "title" : "{{ box.title }}",
-            "repo" : "{{ box.boxUrl }}",
-            "type" : "{{ box.boxType }}",
-            "lastUpdate" : "{{ box.lastUpdate }}"
-        };
-        boxes.push(box);
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="estilo.css">
+    <title>oncase toolkit | The beginning of infinite possibilities for the data.</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="The place where all the fun is happening.">
+    <script src="particles/particles.min.js"></script>
+
+    <script>    
+        if(window.location.href.split('=')[1] == '#1'){
+            alert("Thank you for interest. We'll get back to you soon!");
+        }   
     </script>
-                <div class="box">
-                    <div class="content-wrapper">
-                        <div class="project-icon {{ box.iconClass }}"></div>
-                        <div class="bg-{{ box.color }} project-title" box-id="{{ box.id }}">
-                            {{ box.title }}
-                            <div class="touch-more"></div>
-                        </div>
-                        <div class="project-description">
-                            {{ box.description }}
-                            <div class="gimmemore"></div>
-                            <div class="lastUpdated" style="float: bottom; margin-top: 5px;"><small class="updated">
-                                Last update on <script>
-                                    var date = new Date(box["lastUpdate"]);
-                                    document.write(date.toLocaleString().split(" ").join(" at "));
-                                </script>
-                            </small></div>
-                        </div>
-                    </div>
-                </div>
-{% endfor %}
+
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <div>
+
+                <h1 class="relative logo"><img src="img/logo-toolkit.png" alt=""> </h1>
+                <h2 class="subtitle relative">The place where all the fun is happening.</h2>
+                <p class="relative">He is a space maintained by some crazy people in our company that insist to share
+                    some ideas and crazy projects that they're working on. It's usually stuff to be used with Pentaho
+                    applications and environments.</p>
+            </div>
+            <img src="img/undraw_science_fqhl.png" width="200px">
+        </header>
+
+        <!-- filters place -->
+        <ul class="box-filters" id="toolfilters"></ul>
+
+        <!-- tools place -->
+        <ul id="toollist" class="box-tools"></ul>
+
+
+    </main>
+    <div id="particles-js"></div>
+
+
+    <footer>
+        <h2 class="grey subtitle">Big Data and Analytics questions? Get in touch <a href="https://www.oncase.com.br//contato"
+                title="powered by oncase" target="_blank">onca.se</a></h2>
+
+        <a href="https://www.oncase.com.br/" class="micro" target="_blank">Made with ❤️ Oncase</a>
+    </footer>
+
+    <script src="fun.js"></script>
+    <script>particlesJS.load('particles-js', 'particles/particlesjs-config.json', function () { });</script>
+    
+    <!-- Smartlook -->
+    <script type="text/javascript">
+        window.smartlook || (function (d) {
+            var o = smartlook = function () { o.api.push(arguments) }, h = d.getElementsByTagName('head')[0];
+            var c = d.createElement('script'); o.api = new Array(); c.async = true; c.type = 'text/javascript';
+            c.charset = 'utf-8'; c.src = 'https://rec.smartlook.com/recorder.js'; h.appendChild(c);
+        })(document);
+        smartlook('init', 'b07cb5f9e3d71608af77ee78829f928a56cc021f');
+    </script>
+    
+
+    <!-- modal de mensagem -->
+
+    <div class="modal">
+        <form action="https://submit-form.com/b3125621-ec50-4a63-bcee-75bb2396c520" class="formContato">
+            <div class="flex extremos center">
+                <h2 class="subtitle">We'll get back to you!</h2>
+                <span class="close" onclick="fecharModal(this)">X</span>
+            </div>
+            <input type="hidden" name="_redirect" value="https://idantas.github.io/?p=#1" />
+            <input type="hidden" name="Type" value="Contato: We do it for you" />
+            <input type="hidden" name="Tool" id="tool" />
+            <label>
+                Name:
+                <input type="text" name="Name" required placeholder="Your name">
+            </label>
+            <label>
+                Email:
+                <input type="email" name="Email" required placeholder="jhondoe@email.com">
+            </label>
+            <label>
+                Phone Number:
+                <input type="text" name="Phone" required placeholder="">
+            </label>
+            <label>
+                Please, let us to know more about you and your business
+                <textarea name="message" rows="5" placeholder="Tell us something"></textarea>
+            </label>
+            
+            <input type="submit" value="Send message"  onclick="retornoMsg(this)">
+            
+        </form>
+    </div>
+
+    <script>function fecharModal(obj){
+            obj.closest('.modal').classList.remove('ativo');
+        }
+        
+        </script>
+</body>
+
+
+</html>
