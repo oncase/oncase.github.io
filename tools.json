@@ -1,7 +1,7 @@
 [
   {
     "titulo": "Azure Cosmos DB export",
-    "resumo": "Exporter of Azure Cosmos Db data through CLI.",
+    "resumo": "Data Exporter from Azure CosmosDB - CLI",
     "ano": 2012,
     "repositorio":"https://github.com/oncase/cosmosdb-export",
     "site":"https://onca.se/",
